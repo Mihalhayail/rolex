@@ -1,0 +1,95 @@
+:root {
+  --primary-color: #185f3b;
+  --secondary-color: #beebd5;
+  --text-color: #fff;
+  --text-gray: #e6e6e6;
+  --text-color-2: #000;
+  --text-shadow: rgba(0, 0, 0, 0.5);
+  --shadow: rgba(0, 0, 0, 0.6);
+}
+
+*,
+html {
+margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+body {
+  align-items: center;
+  background-color: var(--secondary-color);
+  font-family: Arial, sans-serif;
+}
+
+.auth-container {
+  background-color: #fff;
+  padding: 2rem;
+  padding-top: 1rem;
+  border-radius: 8px;
+  margin: 3rem auto;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  font-size: 1rem;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color-2);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.show-password {
+  position: absolute;
+  right: 10px;
+  top: 65%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #006eff;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}

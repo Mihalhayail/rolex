@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/auth.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav id="navbar"></nav>
+    <div class="auth-container">
+      <form id="registerForm">
+        <h2>Register</h2>
+
+        <!-- Input Username -->
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            required
+          />
+          <span class="error" id="usernameError"></span>
+        </div>
+
+        <!-- Input Email -->
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="regEmail"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <span class="error" id="regEmailError"></span>
+        </div>
+
+        <!-- Input Password -->
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="regPassword"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+          <span class="show-password">Show</span>
+          <span class="error" id="regPasswordError"></span>
+        </div>
+
+        <!-- Input Confirm Password -->
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="Confirm your password"
+            required
+          />
+          <span class="show-password">Show</span>
+          <span class="error" id="confirmPasswordError"></span>
+        </div>
+
+        <!-- Tombol Register -->
+        <a href="login.html">
+          <button type="submit" id="registerBtn" disabled>Register</button>
+        </a>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+      </form>
+    </div>
+    <div id="sysMenu"></div>
+    <script src="../js/auth.js"></script>
+    <script src="../js/components.js"></script>
+  </body>
+</html>
